@@ -1,0 +1,7 @@
+{# Setup node package name #}
+{% set node_package = 'nodejs' %}
+
+{# Setup ghost vesion string #}
+{% set ghost_major_version = salt['pillar.get']('ghost:major_version')|string %}
+{% set ghost_minor_version = salt['pillar.get']('ghost:minor_version')|string %}
+{% set ghost_patch_version = salt['pillar.get']('ghost:patch_version')|string %}
