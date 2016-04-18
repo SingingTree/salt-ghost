@@ -2,4 +2,5 @@ ghost:
   major_version: 0
   minor_version: 7
   patch_version: 9
-  zip_sha: 62c97a9766cc947a50dd9cca1da862dd5b241e3f
+  source_hash: sha1=62c97a9766cc947a50dd9cca1da862dd5b241e3f
+  install_dir: /var/www/ghost

@@ -5,3 +5,7 @@
 {% set ghost_major_version = salt['pillar.get']('ghost:major_version')|string %}
 {% set ghost_minor_version = salt['pillar.get']('ghost:minor_version')|string %}
 {% set ghost_patch_version = salt['pillar.get']('ghost:patch_version')|string %}
+{% set ghost_version_string = ghost_major_version + '.' + ghost_minor_version + '.' + ghost_patch_version %}
+
+{# Setup ghost source url #}
+{% set ghost_source_url = 'https://ghost.org/zip/ghost-' + ghost_version_string + '.zip' %}
