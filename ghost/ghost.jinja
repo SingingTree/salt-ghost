@@ -1,5 +1,6 @@
-{# Setup node package name #}
+{# Setup node package names #}
 {% set node_package = 'nodejs' %}
+{% set npm_package = 'npm' %}
 
 {# Setup ghost vesion string #}
 {% set ghost_major_version = salt['pillar.get']('ghost:major_version')|string %}
